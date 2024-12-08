@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style type="text/css">
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            box-shadow: 0 0px 0px 0px rgba(19, 35, 47, 0.3);
+        }
+        body {
+            background-image: url("IMG-20241126-WA0008.jpg");
+            background-repeat: no-repeat;
+            background-size: 800px;
+            background-attachment: scroll
+        }
+        label, input {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="submit"] {
+            margin: 10px 0 0 0;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login"> 
+    </form>
+    </center>
+
+    <script type="text/javascript">
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // prevent default form submission behavior
+
+            // validate username and password
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            //set the session on the login page  
+            if (username === 'Medstar' && password === 'Newpassword123') {
+                
+             //sessionStorage.setItem("AuthenticationState", "Authenticated");
+                //sessionStorage.setItem("AuthenticationExpires", Date.now.addHours(1));
+               window.location.replace("medstar.html");
+                //alert('Login successful!');
+
+            } else {
+                alert('Username or password incorrect. Please try again.');
+            }
+            //Date.prototype.addHours = function(h) {    
+            //this.setTime(this.getTime() + (h*60*60*1000)); 
+            //return this;   
+        //}
+        });
+     document.addEventListener('contextmenu', 
+     event => event.preventDefault()
+);
+    </script>
+</body>
+</html>
