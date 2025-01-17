@@ -1,2 +1,2 @@
-Sl no,Facility Name and Link,Facility ID,Link,Status,License Valid Until,Report Access Username,Group name,Helpline email,Helpline mobile
-1,My Health,MF2452,<a href="https://app.powerbi.com/reportEmbed?reportId=c6371c0d-be50-411d-aca2-3be13a1f8c2e&autoAuth=true&ctid=91c03647-afa5-499a-9ddf-3775e4c5690c">Click here</a>,Active,31-Dec-25,myhealth@hcacae.onmicrosoft.com,Myhealth,info@hcac.ae, + 971 56 414 2905
+Sl no,Facility Name,Facility ID,Link,Status,License Valid Until,Report Access Username,Group name,Helpline email,Helpline mobile
+1,My Health,MF2452,<a href="Powerbi_link">Click here</a>,Active,31-Dec-25,userid@hcacae.onmicrosoft.com,Myhealth,info@hcac.ae, + 971 56 414 2905
