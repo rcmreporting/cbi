@@ -1,2 +1,2 @@
 Sl no,Facility Name,Facility ID,Link,Status,License Valid Until,Report Access Username,Group name,Helpline email,Helpline mobile
-1,Al Taie PHC,MF2452,<a href="Powerbi_link">Click here</a>,Active,31-Dec-25,userid@hcacae.onmicrosoft.com,Myhealth,info@hcac.ae, + 971 56 414 2905
+1,Al Taie PHC,MF2452,<a href="Powerbi_link">Click here</a>,Active,31-Dec-25,userid@hcacae.onmicrosoft.com,Al Taie,info@hcac.ae, + 971 56 414 2905
