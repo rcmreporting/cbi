@@ -1,2 +1,2 @@
 Sl no,Facility Name,Facility ID,Link,Status,License Valid Until,Report Access Username,Group name,Helpline email,Helpline mobile
-1,Al Taie PHC,MF2452,<a href="https://app.powerbi.com/view?r=eyJrIjoiZGU1ZmE1ZTktY2E3Yy00NTE2LTkwMjAtNTNkNGUwOGM0ZWI0IiwidCI6IjkxYzAzNjQ3LWFmYTUtNDk5YS05ZGRmLTM3NzVlNGM1NjkwYyJ9">Click here</a>,Active,31-Dec-25,userid@hcacae.onmicrosoft.com,Al Taie,info@hcac.ae, + 971 56 414 2905
+1,Al Taie PHC,MF2452,<a href="https://app.powerbi.com/view?r=eyJrIjoiZGU1ZmE1ZTktY2E3Yy00NTE2LTkwMjAtNTNkNGUwOGM0ZWI0IiwidCI6IjkxYzAzNjQ3LWFmYTUtNDk5YS05ZGRmLTM3NzVlNGM1NjkwYyJ9">Click here</a>,Active,31-Dec-25,userid@hcacae.onmicrosoft.com,Al Taie,<a href="https://hcac.freshdesk.com/support/tickets/new">need assistance</a>, + 971 56 414 2905
