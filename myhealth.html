@@ -53,7 +53,7 @@
     </table>
     <script type="module">
 //         tutorial link : https://www.youtube.com/watch?v=gnqHNJNc_0A
-        onload = fetch("https://raw.githubusercontent.com/rcmreporting/cbi/refs/heads/main/data.txt").then(res => {
+        onload = fetch("https://raw.githubusercontent.com/rcmreporting/cbi/refs/heads/main/myhealth.txt").then(res => {
             return res.text()
         }).then(data => {
             let result = data.split(/\r?\n|\r/).map(e => {
