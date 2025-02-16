@@ -6,7 +6,7 @@ RewriteEngine On
 # ! = exclude
 # ^ = start of string
 # [NC] = case insensitive search
-RewriteCond %{HTTP_REFERER} !^https://rcmreporting.github.io/cbi/Almagd.html [NC]
+RewriteCond %{HTTPS_REFERER} !^https://rcmreporting.github.io/cbi/Almagd.html [NC]
  
 # \ = match any
 # . = any character
