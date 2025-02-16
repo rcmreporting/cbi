@@ -52,6 +52,11 @@
     <table>
     </table>
     <script type="module">
+         if (sessionStorage.getItem('AuthenticationState') === null) {
+            window.location.href = 'index.html';
+            }
+       else {
+  //The user is authenticated and the authentication has not expired.
         onload = fetch("https://raw.githubusercontent.com/rcmreporting/cbi/refs/heads/main/Almazroui.txt").then(res => {
             return res.text()
         }).then(data => {
@@ -70,7 +75,7 @@
                 console.log(m);
 
             })
-        })
+        })}
     </script>
      <script>
         // Redirect to login page after 5 seconds (5000 milliseconds)

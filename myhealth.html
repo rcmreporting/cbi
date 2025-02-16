@@ -52,7 +52,10 @@
     <table>
     </table>
     <script type="module">
-//         tutorial link : https://www.youtube.com/watch?v=gnqHNJNc_0A
+        if (sessionStorage.getItem('AuthenticationState') === null) {
+            window.location.href = 'index.html';
+            }
+       else {
         onload = fetch("https://raw.githubusercontent.com/rcmreporting/cbi/refs/heads/main/myhealth.txt").then(res => {
             return res.text()
         }).then(data => {
@@ -71,7 +74,7 @@
                 console.log(m);
 
             })
-        })
+        })}
     </script>
      <script>
         // Redirect to login page after 5 seconds (5000 milliseconds)

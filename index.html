@@ -53,16 +53,19 @@
             //set the session on the login page  
             if (username === 'Myhealth' && password === 'Newpassword123') {
                 
-             //sessionStorage.setItem("AuthenticationState", "Authenticated");
+             sessionStorage.setItem("AuthenticationState", "Authenticated");
                 //sessionStorage.setItem("AuthenticationExpires", Date.now.addHours(1));
                window.location.replace("myhealth.html");
                 //alert('Login successful!');
 
             } else if (username === 'Altaie' && password === 'Claims@123') {
+                sessionStorage.setItem("AuthenticationState", "Authenticated");
                 window.location.replace("Altaie.html"); 
             } else if (username === 'Almazroui' && password === 'AmcCBI@2025') {
+                sessionStorage.setItem("AuthenticationState", "Authenticated");
                 window.location.replace("Almazroui.html"); 
             } else if (username === 'Almagd' && password === 'AmcCBI@2025') {
+                sessionStorage.setItem("AuthenticationState", "Authenticated");
                 window.location.replace("Almagd.html"); 
             } 
             
