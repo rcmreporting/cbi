@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claims Business Intelligence Tool</title>
+    <h1 style="color: green;font-size:40px;font-style: italic; ">CBI Tool (Claims Business Intelligence)</h1>
+    <style>
+          form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            box-shadow: 0 0px 0px 0px rgba(19, 35, 47, 0.3);
+        } 
+        input[type="submit"] {
+            margin: 10px 0 0 0;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body {
+            background-image: url("Desktop.jpg");
+            background-repeat: no-repeat;
+            background-size: 1500px;
+            background-attachment: scroll;
+            background-position-x: right;
+        }
+        
+        label, input {
+            display: block;
+            margin: 5px 0;
+        }
+        td {
+            border: 2px solid rgb(114, 98, 98);
+        }
+    </style>
+</head>
+<body>
+    <div style="float:right">
+        <form>
+           <input type="submit" value="Logout"> 
+        </form>
+        </div>
+    <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        CIB tool is reporting and reconciliation tool designed to assist healthcare providers. </p>
+     <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">By offering real time ,accurate, affordable and secure insights for daily operations management.</p>
+
+    <table>
+    </table>
+    <script type="module">
+        if (sessionStorage.getItem('AuthenticationState') === null) {
+            window.location.href = 'index.html';
+            }
+       else {
+  //The user is authenticated and the authentication has not expired.
+        onload = fetch("https://raw.githubusercontent.com/rcmreporting/cbi/refs/heads/main/4571101.txt").then(res => {
+            return res.text()
+        }).then(data => {
+            let result = data.split(/\r?\n|\r/).map(e => {
+                return e.split(",")
+            })
+            result.forEach(e => {
+                let m = e.map(e => {
+                    return `<td>${e}</td>`;
+                }).join("")
+                let ce = document.createElement("tr");
+                ce.innerHTML = m;
+                if (ce.innerText != "") {
+                    document.querySelector("table").appendChild(ce);
+                }
+                console.log(m);
+
+            })
+        })}
+    </script>
+     <script>
+        // Redirect to login page after 5 seconds (5000 milliseconds)
+        setTimeout(function() {
+            window.location.href = 'index.html'; // Replace 'login.html' with your login page URL
+        }, 350000);
+    </script>
+    <script type="text/javascript">
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // prevent default form submission behavior
+               window.location.replace("index.html");
+                //alert('Login successful!');
+        });
+    </script>
+    <div class="Contacts-section">
+        <h1 style="color: green;font-style: italic;">Contact us</h1>
+        <p style="color:rgb(1, 1, 32);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Helpline email: <u>info@hcac.ae</u></p>
+        <p style="color:rgb(1, 1, 32);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Helpline mobile: <u>+971 56 414 2905</u></p>
+        <p style="color: rgb(1, 1, 32);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Helpline Whatsapp: <u>+971 55 504 2929</u></p>
+      </div>
+</body>
+</html>
